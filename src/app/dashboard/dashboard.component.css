@@ -1,0 +1,15 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: brown;
+}
+.left{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+}
+.right{
+    width: 80%;g
+    height: 100%;
+    background-color: teal;
+}
