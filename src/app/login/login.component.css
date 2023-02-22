@@ -2,19 +2,36 @@
     width: 100vw;
     height: 100vh;
     background-color: aqua;
-    text-align: center;
+display: flex;
+justify-content: center;
+
 
 }
 input{
     border-radius: 5px;
     height: 10%;
+    width: 80%;
 }
 button{
     background-color: blue;
     border-radius: 5px;
+    width: 80%;
+    height: 10%;
 }
 form{
     text-align: center;
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    margin: 20%;
+    background-color: blanchedalmond;
    
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+label{
+    text-align: center;
     
 }
