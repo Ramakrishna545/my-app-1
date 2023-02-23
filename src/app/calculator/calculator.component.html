@@ -1,18 +1,18 @@
 <div class="parent">
     <div class="calci">
             <h1>Calculator</h1>
-            <input type="number" placeholder="0">
+            <input type="number" [(ngModel)]="number1" placeholder="0">
             <br>
             <br>
-            <input type="number" placeholder="0">
+            <input type="number" [(ngModel)]="number2" placeholder="0">
             <br>
             <br>
-            <button>Add+</button>
-            <button>sub-</button>
-            <button>mul*</button>
-            <button>div/</button>
+            <button (click)="sum()">Add+</button>
+            <button (click)="sub()">sub-</button>
+            <button (click)="mul()">mul*</button>
+            <button (click)="div()">div/</button>
             <br>
             <br>
-            <h2>Result</h2>
+            <h2>Result is {{result}}</h2>
     </div>
 </div>
