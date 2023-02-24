@@ -14,7 +14,7 @@ export class RectangleComponent {
     this.result=this.number1*this.number2
   }
   perimeter(){
-    this.result= 2 * this.number1 + this.number2
+    this.result= 2 * (this.number1 + this.number2)
   }
   
 
