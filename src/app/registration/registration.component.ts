@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent {
+  public names:string[]=['']
+  public name:string='';
+  registration(){
+    this.names.push(this.name);
+    this.name='';
+  }
+
 
 }
