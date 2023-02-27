@@ -10,9 +10,9 @@ export class DirectivesComponent {
   public names:string[]=["ram","raj","kiran","laxman"]
   public states:string[]=["Telangana","ap","mp","goa"]
   public users:any = [
-    {name:'abc',phone:6526662526},
-    {name:'def',phone:2666256526},
-    {name:'def',phone:6526252656}
+    {name:'abc',phone:6526662526,marks:23,age:12},
+    {name:'def',phone:2666256526,marks:55,age:23},
+    {name:'def',phone:6526252656,marks:80,age:44}
   ]
   public products:any = [
     {name:'pen',price:'10',rating:2},
