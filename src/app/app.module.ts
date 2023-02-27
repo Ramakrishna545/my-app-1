@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { WishComponent } from './wish/wish.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RegistrationComponent } from './registration/registration.component';
     DataBindingComponent,
     RectangleComponent,
     DirectivesComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    WishComponent
   ],
   imports: [
     BrowserModule,

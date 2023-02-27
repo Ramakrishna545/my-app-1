@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { WishComponent } from './wish/wish.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
     {path:'calculator', component:CalculatorComponent},
     {path:'Rectangle' ,component:RectangleComponent},
     {path:'Directives', component:DirectivesComponent},
-    {path:'registration',component:RegistrationComponent}
+    {path:'registration',component:RegistrationComponent},
+    {path:'wish',component:WishComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}

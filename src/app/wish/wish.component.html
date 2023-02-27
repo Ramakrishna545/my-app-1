@@ -1,0 +1,11 @@
+<h1>wish</h1>
+
+<label for="">time:</label>
+<input type="number" [(ngModel)]="time">
+<br>
+
+
+<h1 *ngIf="time>0 && time<12">good morning</h1>
+<h1  *ngIf="time>=12 && time<17">good afternoon</h1>
+<h1  *ngIf="time>=17 && time<19">good evening</h1>
+<h1  *ngIf="time>=19 && time<24">good night</h1>
