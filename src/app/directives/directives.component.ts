@@ -19,7 +19,11 @@ export class DirectivesComponent {
     {name:'shirt',price:'1500',rating:3},
     {name:'mobile',price:'12000',rating:4},
     {name:'tv',price:'25000',rating:5}
+
+    
   
   ]
+
+  public today:any=new Date();
 
 }
