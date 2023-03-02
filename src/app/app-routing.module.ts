@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { CarsComponent } from './cars/cars.component';
 import { CartComponent } from './cart/cart.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
@@ -9,6 +10,7 @@ import { GradeComponent } from './grade/grade.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PhonesComponent } from './phones/phones.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { WishComponent } from './wish/wish.component';
@@ -24,7 +26,9 @@ const routes: Routes = [
     {path:'registration',component:RegistrationComponent},
     {path:'wish',component:WishComponent},
     {path:'cart',component:CartComponent},
-    {path:'grade',component:GradeComponent}
+    {path:'grade',component:GradeComponent},
+    {path:'cars',component:CarsComponent},
+    {path:'phones',component:PhonesComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}

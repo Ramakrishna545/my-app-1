@@ -1,0 +1,19 @@
+<div class="company">
+<label for="">company:</label>
+
+<input type="radio" name="company"  [(ngModel)]="company" value="honda">
+<label for="">honda</label>
+<input type="radio" name="company" [(ngModel)]="company" value="kia">
+<label for="">kia</label>
+<input type="radio" name="company"  [(ngModel)]="company" value="bmw">
+<label for="">BMW</label>
+<input type="radio" name="company"  [(ngModel)]="company" value="audi">
+<label for="">audi</label>
+</div>
+
+<img src="/assets/download.jpeg" alt="" *ngIf="company=='honda'">
+<img src="/assets/kia.jpeg" alt="" *ngIf="company=='kia'">
+<img src="/assets/bmw.jpeg" alt="" *ngIf="company=='bmw'">
+<img src="/assets/audi.jpeg" alt="" *ngIf="company=='audi'">
+
+
