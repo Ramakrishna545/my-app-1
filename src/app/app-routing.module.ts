@@ -14,10 +14,12 @@ import { PhonesComponent } from './phones/phones.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { UsersComponent } from './users/users.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
 import { WishComponent } from './wish/wish.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
+  
   {path: 'dashboard',component:DashboardComponent,children:[
     {path:'home', component:HomeComponent},
     {path:'data-binding', component:DataBindingComponent},
@@ -31,7 +33,9 @@ const routes: Routes = [
     {path:'cars',component:CarsComponent},
     {path:'phones',component:PhonesComponent},
     {path:'users',component:UsersComponent}
+    
   ]},
+  {path:'vehicles',component:VehicleComponent},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}
 ];

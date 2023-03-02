@@ -20,6 +20,7 @@ import { CarsComponent } from './cars/cars.component';
 import { PhonesComponent } from './phones/phones.component';
 import { UsersComponent } from './users/users.component';
 import {HttpClientModule} from '@angular/common/http';
+import { VehicleComponent } from './vehicle/vehicle.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import {HttpClientModule} from '@angular/common/http';
     GradeComponent,
     CarsComponent,
     PhonesComponent,
-    UsersComponent
+    UsersComponent,
+    VehicleComponent
   ],
   imports: [
     BrowserModule,
