@@ -1,6 +1,8 @@
 div{
-    display:flexbox;
-    border: 2px solid aqua;
+    display:inline-block;
+
+   
+    width: 20%;
  
 }
 img{
