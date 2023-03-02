@@ -13,6 +13,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PhonesComponent } from './phones/phones.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { UsersComponent } from './users/users.component';
 import { WishComponent } from './wish/wish.component';
 
 const routes: Routes = [
@@ -28,7 +29,8 @@ const routes: Routes = [
     {path:'cart',component:CartComponent},
     {path:'grade',component:GradeComponent},
     {path:'cars',component:CarsComponent},
-    {path:'phones',component:PhonesComponent}
+    {path:'phones',component:PhonesComponent},
+    {path:'users',component:UsersComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}

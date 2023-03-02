@@ -1,0 +1,24 @@
+<!-- <pre>{{users|json}}</pre> -->
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>phone</th>
+            <th>city</th>
+            <th>image</th>
+            <th>id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.city}}</td>
+            <td>
+                <img src="{{user.image}}" alt="">
+            </td>
+            <td>{{user.id}}</td>
+        </tr> 
+    </tbody>
+</table>
