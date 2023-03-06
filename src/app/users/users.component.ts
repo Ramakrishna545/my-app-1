@@ -7,11 +7,14 @@ import { UsersService } from '../users.service';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent {
+  public term:string="";
+  public column:string ="";
+  public order:string="";
  
   public users:any =[];
 
   constructor(private _usersService:UsersService) { 
-
+  
     _usersService.getUsers().subscribe(
       (data:any)=>{
         this.users=data;
@@ -20,7 +23,42 @@ export class UsersComponent {
         alert("internal server error");
       }
       )
+      
+    
+  
     
   }
+
+  filter(){
+    this._usersService.getFilteredUsers(this.term).subscribe(
+      (data:any)=>{
+        this.users=data;
+      },
+      (err:any)=>{
+        alert("internal server errror");
+      }
+    )
+   
+  }
+  sort(){
+    this._usersService.getSortedUsers(this.column,this.order).subscribe(
+      (data:any)=>{
+        this.users=data;
+      },
+      (err:any)=>{
+        alert("internal server error");
+      }
+    )
+  }
+   page(no:number){
+    this._usersService.getPagedUsers(no,10).subscribe(
+      (data:any)=>{
+        this.users=data;
+      },
+      (err:any)=>{
+        alert("internal server error");
+      }
+    )
+   }
 
 }

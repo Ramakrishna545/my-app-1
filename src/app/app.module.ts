@@ -22,6 +22,8 @@ import { UsersComponent } from './users/users.component';
 import {HttpClientModule} from '@angular/common/http';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { ProductsComponent } from './products/products.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { AccountsComponent } from './accounts/accounts.component';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { ProductsComponent } from './products/products.component';
     PhonesComponent,
     UsersComponent,
     VehicleComponent,
-    ProductsComponent
+    ProductsComponent,
+    GalleryComponent,
+    AccountsComponent
   ],
   imports: [
     BrowserModule,

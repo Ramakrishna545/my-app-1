@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AccountsComponent } from './accounts/accounts.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CarsComponent } from './cars/cars.component';
 import { CartComponent } from './cart/cart.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { GalleryComponent } from './gallery/gallery.component';
 import { GradeComponent } from './grade/grade.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -38,6 +40,8 @@ const routes: Routes = [
   ]},
   {path:'vehicles',component:VehicleComponent},
   {path:'products',component:ProductsComponent},
+  {path:'gallery',component:GalleryComponent},
+  {path:'accounts',component:AccountsComponent},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}
 ];

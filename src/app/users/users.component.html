@@ -1,4 +1,20 @@
 <!-- <pre>{{users|json}}</pre> -->
+<input type="text" [(ngModel)]="term" (keyup)="filter()">
+<label for="">column:</label>
+<select  [(ngModel)]="column">
+    <option >name</option>
+    <option >phone</option>
+    <option >city</option>
+    <option >id</option>
+</select>
+
+<label for="">order:</label>
+<select [(ngModel)]="order" >
+    <option >asc</option>
+    <option >desc</option>
+</select>
+
+<button class="btn btn-warning" (click)="sort()">sort</button>
 
 <table class="table table-dark">
     <thead>
@@ -22,3 +38,7 @@
         </tr> 
     </tbody>
 </table>
+<ul class="pagination">
+    <li *ngFor="let item of [].constructor(10); let i=index" class="page-item" (click)="page(i+1)"><a class="page-link" >1</a>{{i+1}}</li>
+   
+  </ul>

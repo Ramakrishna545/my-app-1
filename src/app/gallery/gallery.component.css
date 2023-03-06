@@ -1,0 +1,12 @@
+div{
+    display: inline-block;
+    background-color: aqua;
+    margin: 10px;
+}
+img{
+    height: 200px;
+    width: 300px;
+}
+h1{
+    font-size: medium;
+}
