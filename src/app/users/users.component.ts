@@ -61,4 +61,16 @@ export class UsersComponent {
     )
    }
 
+   delete(id:string){
+    this._usersService.deleteUser(id).subscribe(
+      (data:any)=>{
+        alert("deleted succesfully");
+       location.reload();
+      },
+      (err:any)=>{
+        alert("internal server error");
+      } 
+    )
+   }
+
 }
