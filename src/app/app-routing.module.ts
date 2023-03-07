@@ -4,6 +4,7 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CarsComponent } from './cars/cars.component';
 import { CartComponent } from './cart/cart.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
@@ -35,7 +36,12 @@ const routes: Routes = [
     {path:'grade',component:GradeComponent},
     {path:'cars',component:CarsComponent},
     {path:'phones',component:PhonesComponent},
-    {path:'users',component:UsersComponent}
+    {path:'users',component:UsersComponent},
+    {path:'vehicles',component:VehicleComponent},
+    {path:'products',component:ProductsComponent},
+    {path:'gallery',component:GalleryComponent},
+    {path:'accounts',component:AccountsComponent},
+    {path:'create-user',component:CreateUserComponent}
     
   ]},
   {path:'vehicles',component:VehicleComponent},

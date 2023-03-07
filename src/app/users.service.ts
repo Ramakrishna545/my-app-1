@@ -27,6 +27,8 @@ export class UsersService {
 deleteUser(id:string):Observable<any>{
   return this._httpClient.delete(this.URL+"/"+id);
 }
-
+createUser(data:any):Observable<any>{
+  return this._httpClient.post(this.URL,data);
+}
 
 }
