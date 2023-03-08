@@ -25,6 +25,7 @@ import { ProductsComponent } from './products/products.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { CreateVehiclesComponent } from './create-vehicles/create-vehicles.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
     ProductsComponent,
     GalleryComponent,
     AccountsComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    CreateVehiclesComponent
   ],
   imports: [
     BrowserModule,

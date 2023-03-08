@@ -5,6 +5,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { CarsComponent } from './cars/cars.component';
 import { CartComponent } from './cart/cart.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { CreateVehiclesComponent } from './create-vehicles/create-vehicles.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
@@ -41,7 +42,8 @@ const routes: Routes = [
     {path:'products',component:ProductsComponent},
     {path:'gallery',component:GalleryComponent},
     {path:'accounts',component:AccountsComponent},
-    {path:'create-user',component:CreateUserComponent}
+    {path:'create-user',component:CreateUserComponent},
+    {path:'create-vehicles',component:CreateVehiclesComponent}
     
   ]},
   {path:'vehicles',component:VehicleComponent},
