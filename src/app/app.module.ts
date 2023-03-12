@@ -26,6 +26,9 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateVehiclesComponent } from './create-vehicles/create-vehicles.component';
+import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CreateStudentComponent } from './create-student/create-student.component';
 
 
 @NgModule({
@@ -51,14 +54,17 @@ import { CreateVehiclesComponent } from './create-vehicles/create-vehicles.compo
     GalleryComponent,
     AccountsComponent,
     CreateUserComponent,
-    CreateVehiclesComponent
+    CreateVehiclesComponent,
+    CreateAccountsComponent,
+    CreateStudentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

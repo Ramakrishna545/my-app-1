@@ -1,9 +1,12 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountsComponent } from './accounts/accounts.component';
+import { AuthenticationGuard } from './authentication.guard';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CarsComponent } from './cars/cars.component';
 import { CartComponent } from './cart/cart.component';
+import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateVehiclesComponent } from './create-vehicles/create-vehicles.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -25,7 +28,7 @@ import { WishComponent } from './wish/wish.component';
 const routes: Routes = [
   {path:'login', component:LoginComponent},
   
-  {path: 'dashboard',component:DashboardComponent,children:[
+  {path: 'dashboard',canActivate:[AuthenticationGuard], component:DashboardComponent,children:[
     {path:'home', component:HomeComponent},
     {path:'data-binding', component:DataBindingComponent},
     {path:'calculator', component:CalculatorComponent},
@@ -43,7 +46,9 @@ const routes: Routes = [
     {path:'gallery',component:GalleryComponent},
     {path:'accounts',component:AccountsComponent},
     {path:'create-user',component:CreateUserComponent},
-    {path:'create-vehicles',component:CreateVehiclesComponent}
+    {path:'create-vehicles',component:CreateVehiclesComponent},
+    {path:'create-accounts', component:CreateAccountsComponent},
+    {path:'create-student',component:CreateStudentComponent}
     
   ]},
   {path:'vehicles',component:VehicleComponent},

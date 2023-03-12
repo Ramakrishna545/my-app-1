@@ -1,0 +1,61 @@
+<h1>create accounts form</h1>
+
+<form [formGroup]="accountForm" >
+    <label for="">Account name</label>
+    <input type="text" formControlName="accountname">
+    <br>
+    <label for="">available balance </label>
+    <input type="text" formControlName="availablebalance ">
+    <br>
+    <label for="">account number</label>
+    <input type="text" formControlName="accountnumber">
+    <br>
+    <label for="">id</label>
+    <input type="text" formControlName="id">
+    <br>
+    <label for="">sno </label>
+    <input type="text" formControlName="sno">
+    <br>
+    <label for=""> EmployeeId</label>
+    <input type="text" formControlName="EmployeeId">
+    <br>
+    <label for=""> EmployeeName</label>
+    <input type="text" formControlName="EmployeeName">
+    <br>
+    <label for="">BillacilityStatus</label>
+    <input type="text" formControlName="BillacilityStatus">
+    <br>
+    <label for="">Location</label>
+    <input type="text" formControlName="Location">
+    <br>
+    <label for="">Band</label>
+    <input type="text" formControlName="Band">
+    <br>
+    <label for="">Yrsofexp</label>
+    <input type="text" formControlName="Yrsofexp">
+    <br>
+    <label for="">RollOverdate</label>
+    <input type="text" formControlName="RollOverdate">
+    <br>
+    <label for="">RollOverQuarter</label>
+    <input type="text" formControlName="RollOverQuarter">
+    <br>
+    <label for="">PRP</label>
+    <input type="text" formControlName="PRP">
+    <br>
+    <label for="">Codility</label>
+    <input type="text" formControlName="Codility">
+    <br>
+    <label for="">ReadyforDeploymentskill</label>
+    <input type="text" formControlName="ReadyforDeploymentskill">
+    <br>
+    <label for="">Profile</label>
+    <input type="text" formControlName="Profile">
+    <br>
+    <label for="">ReasonforRejection</label>
+    <input type="text" formControlName="ReasonforRejection">
+    <br>
+
+    <button class="btn btn-success" (click)="submit()">submit</button>
+
+</form>

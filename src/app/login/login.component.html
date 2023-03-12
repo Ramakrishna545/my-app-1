@@ -1,17 +1,17 @@
 <div class="parent">
         <div class="form">
-        <form action="" class="">
+        <form  [formGroup]="loginForm">
             <h1>Login</h1>
             <label for="">Email :</label>
-            <input type="text" placeholder="Email address or phone number">
+            <input type="text" placeholder="Email address or phone number" formControlName="email">
             <br>
             <label for="">Password :</label>
-            <input type="text" placeholder="password">
+            <input type="text" placeholder="password" formControlName="password">
             <br>
-            <button class="btn btn-success" routerLink="/dashboard"><strong>log in</strong></button>
+            <button class="btn btn-success" (click)="login()" ><strong>log in</strong></button>
             <br>
             <p class="p2">Forgotten password</p>
-            <button class="btn btn-danger"><strong>New Account</strong></button>
+            <button class="btn btn-danger" ><strong>New Account</strong></button>
 
         </form>
     </div>
