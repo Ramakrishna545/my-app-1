@@ -36,7 +36,14 @@ export class CreateAccountsComponent {
   constructor(private _accountsService:AccountsService){}
   submit(){
     console.log(this.accountForm);
-
+   this._accountsService.createAccount(this.accountForm.value).subscribe(
+    (data:any)=>{
+      alert("account created successfully");
+    },
+    (err:any)=>{
+      alert("internal server error")
+    }
+   )
    
 
     

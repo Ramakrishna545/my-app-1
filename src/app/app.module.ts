@@ -31,6 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreateStudentComponent } from './create-student/create-student.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +57,7 @@ import { CreateStudentComponent } from './create-student/create-student.componen
     CreateUserComponent,
     CreateVehiclesComponent,
     CreateAccountsComponent,
-    CreateStudentComponent
+    CreateStudentComponent,
   ],
   imports: [
     BrowserModule,
